@@ -1,30 +1,20 @@
 #include<stdio.h>
-int main(void)
+int main()
 {
-  int a,b,c,result;
-  printf("Enter the first number\n");
-  scanf("%d",&a);
-  printf("Enter the second number\n");
-  scanf("%d",&b);
-  printf("Enter the third number\n");
-  scanf("%d",&c);
-  result=comp_func(&a,&b,&c);
-  printf("The greatest of the 3 numbers is %d",result);
-  return(0);
+  int a, b ,c;
+  printf("Enter three numbers: ");
+  scanf("%d %d %d", &a,&b,&c);
+  
+  int number=compare(a,b,c);
 }
-int comp_func(int a,int b,int c)
-{
-  int temp;
-  if((a>b)&(a>c))
-  {
-    temp=a;
+int compare(int a, int b, int c){
+  if(a>b && a>c){
+    printf("a is the largest.");
   }
-  else if((b>a)&(b>c))
-  {
-    temp=b;
+  else if(b>a && b>c){
+    printf("b is the largest.");
   }
-  else
-  {
-    temp=c;
-return temp;
+  else if(c>a && c>b){
+    printf("c is the largest.");
+  }
 }
