@@ -10,17 +10,19 @@ int input()
   scanf("%d",&n);
   return n;
 }
-void compare(int a , int b ,int c,)
+int compare(int a , int b ,int c)
 {
-  largest=a;
-  if(b>largest)
-  {
+  int largest;
+  if(a>b && a>c){
+    largest=a;
+  }
+  if(b>a && b>c){
     largest=b;
   }
-  if(c>largest)
-  {
+  else{
     largest=c;
   }
+
 }
 void output(int a, int b, int c, int largest)
 {
