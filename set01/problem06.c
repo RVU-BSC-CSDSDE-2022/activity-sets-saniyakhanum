@@ -13,15 +13,14 @@ int input()
 
 void compare(int a, int b, int c, int *largest)
 {
-  if(a>b && a>c){
+  if(a>b && a>c)
     *largest=a;
-  }
-  if(b>a && b>c){
+ 
+  if (b>a && b>c)
     *largest=b;
-  }
-  else{
+
+  else
     *largest=c;
-  }
 }
 
 void output(int a, int b, int c, int largest)
@@ -39,6 +38,11 @@ int main()
   output(a,b,c,largest);
   return 0;
 }
+
+
+
+
+
 
 
 
