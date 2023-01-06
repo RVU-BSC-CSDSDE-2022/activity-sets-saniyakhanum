@@ -15,24 +15,27 @@ int input()
 int sum_n_nos(int n)
 {
   int sum=0,i;
-  for(i=1; i<=n; i++)
+  for(i=1;i<=n;i++)
     sum=sum+i;
   return sum;
 }
 
 void output(int n, int sum)
 {
-  printf("the sum of nos %d is %d",n,sum);
+  printf("The sum of natural numbers %d is %d",n,sum);
 }
 
 int main()
 {
   int n,sum;
-  n=input();
+  n=input;
   sum=sum_n_nos(n);
   output(n,sum);
   return 0;
 }
+
+
+
 
 
 
