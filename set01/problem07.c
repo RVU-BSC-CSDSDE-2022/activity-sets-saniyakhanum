@@ -16,15 +16,13 @@ int sum_n_nos(int n)
 {
   int sum=0;
   for(int i=1;i<=n;i++)
-    {
     sum=sum+i;
-    }
   return sum;
 }
 
 void output(int n, int sum)
 {
-  printf("The sum of natural numbers %d is %d",n,sum);
+  printf("The naturals nos %d is %d",n,sum);
 }
 
 int main()
@@ -35,6 +33,9 @@ int main()
   output(n,sum);
   return 0;
 }
+
+
+
 
 
 
