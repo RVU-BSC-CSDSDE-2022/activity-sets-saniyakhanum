@@ -31,4 +31,5 @@ float main(){
   n=input();
   sqrroot= square_root(n);
   output(n,sqrroot);
+  return 0;
 }
